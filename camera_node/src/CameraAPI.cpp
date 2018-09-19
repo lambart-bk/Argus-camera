@@ -102,7 +102,12 @@ void CameraAPI::publishImage(int devIndex,image_transport::Publisher &Publisher)
     sensor_msgs::ImageConstPtr camera_img;
     try
     {
-      camera_img=cv_bridge::CvImage(std_msgs::Header(),"mono8",img_yuv420).toImageMsg();
+      std_msgs::Header h=std_msgs::Header();
+      h.stamp=ros::Time::now();
+      //h.frame_id="";
+      //h.seq=;
+      cout<<"\t\tdevice "<<devIndex<<" timestamp: "<<h.stamp<<endl;
+      camera_img=cv_bridge::CvImage(h,"mono8",img_yuv420).toImageMsg();
     }
     catch(cv_bridge::Exception &e)
     {
