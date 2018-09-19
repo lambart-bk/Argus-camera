@@ -1,2 +1,2 @@
 # Argus-camera
-using libargus  get camera metadata
+using libargus to get camera metadata
