@@ -1,0 +1,2 @@
+/usr/bin/ar qc libargussampleutils.a  CMakeFiles/argussampleutils.dir/EGLGlobal.cpp.o CMakeFiles/argussampleutils.dir/JPEGConsumer.cpp.o CMakeFiles/argussampleutils.dir/Observed.cpp.o CMakeFiles/argussampleutils.dir/Options.cpp.o CMakeFiles/argussampleutils.dir/Thread.cpp.o CMakeFiles/argussampleutils.dir/WindowBase.cpp.o CMakeFiles/argussampleutils.dir/gtk/GuiElement.cpp.o CMakeFiles/argussampleutils.dir/gtk/Window.cpp.o
+/usr/bin/ranlib libargussampleutils.a
